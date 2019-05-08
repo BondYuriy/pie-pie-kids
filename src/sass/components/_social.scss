@@ -1,0 +1,38 @@
+.social ul {
+  display: flex;
+  align-items: center;
+
+  & li {
+    height: 30px;
+    margin-right: 11px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & .fa {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+
+      & svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: $cadetblue-color;
+      }
+    }
+
+    & .icon-facebook svg:hover {
+      fill: #3b5999;
+    }
+
+    & .icon-instagram svg:hover {
+      fill: #e4405f;
+    }
+
+    & .icon-youtube svg:hover {
+      fill: #cd201f;
+    }
+  }
+}
