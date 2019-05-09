@@ -2,57 +2,35 @@
   position: relative;
 
   & .home-carousel {
-    & .item .img-box {
-      height: 550px;
-      border-radius: 20px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    & .item {
+      & .img-box {
+        height: 550px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      & img {
-        display: block;
-        min-width: 100%;
-        min-height: 100%;
-      }
-    }
-
-    & .owl-dots {
-      position: absolute;
-      right: -30px;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
-
-      & .owl-dot {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 2px solid $cadetblue-color;
-        margin-bottom: 7px;
-
-        &:last-child {
-          margin-bottom: 0;
+        & img {
+          display: block;
+          min-width: 100%;
+          min-height: 100%;
         }
       }
 
-      & .active {
-        background-color: $cadetblue-color;
+      & .info-box {
+        position: absolute;
+        left: 25px;
+        bottom: 50px;
+        z-index: 2;
+
+        & .btn {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 75px;
+        }
       }
-    }
-  }
-
-  & .info-box {
-    position: absolute;
-    left: 25px;
-    bottom: 50px;
-    z-index: 2;
-
-    & .btn {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 75px;
     }
   }
 }

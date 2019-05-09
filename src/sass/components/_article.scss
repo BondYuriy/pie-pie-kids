@@ -1,0 +1,53 @@
+.article {
+  display: flex;
+  justify-content: space-between;
+
+  & .img-box {
+    flex: 0 0 48%;
+    height: 195px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 4%;
+  }
+
+  & .info-box {
+    flex: 0 0 48%;
+    height: 195px;
+    overflow: hidden;
+
+    & .date {
+      display: block;
+      color: #c9c9c9;
+      font-size: 11px;
+      font-weight: $Medium;
+      line-height: 17px;
+    }
+
+    & .title {
+      display: block;
+      height: 52px;
+      color: $cadetblue-color;
+      font-size: 14px;
+      font-weight: $Medium;
+      line-height: 18px;
+      margin-bottom: 10px;
+      overflow: hidden;
+
+      &:hover {
+        color: $title-color;
+      }
+    }
+
+    & p {
+      height: 112px;
+      font-size: 12px;
+      font-weight: $Regular;
+      line-height: 16px;
+      overflow: hidden;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

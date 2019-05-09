@@ -171,13 +171,15 @@
   }
 }
 
-.navigations-wrapper {
+.navigations-wrapper,
+.footer-navigations-wrapper {
   height: 56px;
   border-top: 5px solid #f7f5f5;
   border-bottom: 5px solid #f7f5f5;
 }
 
-.navigations {
+.navigations,
+.footer-navigations {
   height: 46px;
   display: flex;
   justify-content: center;
