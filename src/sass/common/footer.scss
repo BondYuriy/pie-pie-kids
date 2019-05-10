@@ -140,25 +140,29 @@
       }
     }
 
-    & nav ul {
-      display: flex;
-      align-items: center;
+    & nav {
+      margin-bottom: 20px;
 
-      & li {
-        margin-right: 25px;
+      & ul {
+        display: flex;
+        align-items: center;
 
-        &:last-child {
-          margin-right: 0;
-        }
+        & li {
+          margin-right: 25px;
 
-        & a {
-          color: #c3c1c0;
-          font-size: 14px;
-          font-weight: $Regular;
-          line-height: 25px;
+          &:last-child {
+            margin-right: 0;
+          }
 
-          &:hover {
-            color: $title-color;
+          & a {
+            color: #c3c1c0;
+            font-size: 14px;
+            font-weight: $Regular;
+            line-height: 25px;
+
+            &:hover {
+              color: $title-color;
+            }
           }
         }
       }
