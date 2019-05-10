@@ -5,11 +5,13 @@
   position: relative;
 
   & .title {
+    font-family: $ApercuProMono;
     color: $title-color;
     font-size: 18px;
     font-weight: $light;
     line-height: 20px;
     padding-top: 20px;
+    text-align: center;
 
     & strong {
       display: block;
