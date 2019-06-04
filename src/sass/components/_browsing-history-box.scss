@@ -1,0 +1,30 @@
+.browsing-history-box {
+  overflow: hidden;
+
+  & > .title {
+    display: block;
+    color: #231f20;
+    font-size: 18px;
+    font-weight: $light;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  & .browsing-history-carousel {
+    width: 590px;
+    margin: auto;
+
+    & .owl-stage-outer {
+      overflow: visible;
+
+      & .owl-stage .owl-item {
+        opacity: 0.3;
+      }
+
+      & .owl-stage .active {
+        opacity: 1;
+      }
+    }
+  }
+}

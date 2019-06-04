@@ -186,3 +186,11 @@
     }
   }
 }
+
+.product-card-small {
+  height: 385px;
+
+  & .img-box {
+    height: 260px;
+  }
+}

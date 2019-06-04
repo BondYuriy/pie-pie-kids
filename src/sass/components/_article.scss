@@ -8,6 +8,15 @@
     border-radius: 10px;
     overflow: hidden;
     margin-right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      display: block;
+      min-width: 100%;
+      min-height: 100%;
+    }
   }
 
   & .info-box {

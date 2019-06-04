@@ -1,0 +1,29 @@
+.breadcrumb-wrapper {
+  padding-top: 271px;
+  background-color: #f7f5f5;
+
+  & nav .breadcrumb {
+    margin: 0;
+    padding: 0;
+    height: 38px;
+    background-color: #f7f5f5;
+
+    & li,
+    li a {
+      height: 38px;
+      line-height: 38px;
+      color: #c3c1c0;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    & li::before {
+      color: #c3c1c0;
+    }
+
+    & li a:hover {
+      color: $title-color;
+    }
+  }
+}

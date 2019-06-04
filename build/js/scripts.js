@@ -17,7 +17,7 @@ $(".navbar-toggler").click(function() {
 
 //=================================================
 
-$(".owl-carousel").owlCarousel({
+$(".home-carousel").owlCarousel({
   loop: true,
   margin: 0,
   nav: true,
@@ -30,6 +30,23 @@ $(".owl-carousel").owlCarousel({
     },
     1000: {
       items: 1
+    }
+  }
+});
+
+$(".browsing-history-carousel").owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    590: {
+      items: 2
     }
   }
 });

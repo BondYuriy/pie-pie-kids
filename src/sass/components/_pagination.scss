@@ -1,0 +1,58 @@
+.pagination-box {
+  & .pagination {
+    & .page-item {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & .page-link {
+        border: 0;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #f7faf9;
+        color: #a5c1c2;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+
+        &:hover {
+          background-color: $yellow-color;
+          color: $title-color;
+        }
+      }
+
+      & .active {
+        background-color: #a5c1c2;
+        color: $white-text;
+
+        &:hover {
+          background-color: #a5c1c2;
+          color: $white-text;
+        }
+      }
+    }
+
+    & .page-prev,
+    .page-next {
+      & .page-link {
+        min-width: 127px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #f7faf9;
+      }
+    }
+
+    & .page-prev {
+      margin-right: 25px;
+    }
+
+    & .page-next {
+      margin-left: 10px;
+    }
+  }
+}

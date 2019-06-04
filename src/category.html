@@ -6,6 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
   <script src="js/jquery-1.11.2.min.js"></script>
 </head>
 
@@ -141,7 +142,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">БРЕНДЫ</a>
+                        <a class="nav-link" href="category.html">БРЕНДЫ</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">ДЕТСКАЯ ОДЕЖДА</a>
@@ -167,79 +168,16 @@
         </div>
       </div>
     </header>
-    <div class="home-carousel-wrapper">
-      <div class="bi-3"></div>
-      <div class="bi-1"></div>
+    <div class="breadcrumb-wrapper">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="home-carousel-box">
-              <div class="owl-carousel owl-theme home-carousel">
-                <div class="item">
-                  <div class="img-box">
-                    <img src="img/Image 1.png" alt="">
-                  </div>
-                  <div class="info-box">
-                    <img src="img/desc_block.png" alt="">
-                    <a class="btn btn-main" href="#">Больше</a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="img-box">
-                    <img src="img/Image 1.png" alt="">
-                  </div>
-                  <div class="info-box">
-                    <img src="img/desc_block.png" alt="">
-                    <a class="btn btn-main" href="#">Больше</a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="img-box">
-                    <img src="img/Image 1.png" alt="">
-                  </div>
-                  <div class="info-box">
-                    <img src="img/desc_block.png" alt="">
-                    <a class="btn btn-main" href="#">Больше</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="home-category-box">
-              <a href="#" class="home-category-item background-red">
-                <div class="img-box">
-                  <img src="img/Image 2.png" alt="">
-                </div>
-                <div class="item-info">
-                  <img src="img/bodysuit.svg" alt="">
-                  <span class="title">Одежда для</span>
-                  <span class="value">ДЕВОЧЕК</span>
-                </div>
-              </a>
-              <a href="#" class="home-category-item background-blue">
-                <div class="img-box">
-                  <img src="img/Image 6.png" alt="">
-                </div>
-                <div class="item-info">
-                  <img src="img/bodysuit-2.svg" alt="">
-                  <span class="title">Одежда для</span>
-                  <span class="value">МАЛЬЧИКОВ</span>
-                </div>
-              </a>
-              <a href="#" class="home-category-item background-yellow">
-                <div class="img-box">
-                  <img src="img/Image 7.png" alt="">
-                </div>
-                <div class="item-info">
-                  <img src="img/boot.svg" alt="">
-                  <span class="title">Одежда для</span>
-                  <span class="value">ОБУВЬ ДЛЯ ДЕТЕЙ</span>
-                </div>
-              </a>
-            </div>
+            <nav aria-label="breadcrumb">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">ГЛАВНАЯ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ДЕТСКАЯ ОДЕЖДА</li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -247,22 +185,37 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="section-title">
-            <div class="box-left"></div>
-            <span class="title">ПОПУЛЯРНОЕ<strong>И НОВИНКИ</strong></span>
-            <div class="box-right"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="product-list-wrapper">
-      <div class="bi-2"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="product-card-box">
-              <div class="product-card-list">
-                <div class="product-card">
+          <div class="category-box">
+            <div class="category-filter"></div>
+            <div class="category-main">
+              <h1 class="title">ДЕТСКАЯ ОДЕЖДА</h1>
+              <div class="category-user-options">
+                <div class="view">
+                  <span class="name">Вид: </span>
+                  <div class="btn-view-box">
+                    <button class="btn btn-grid active" type="button">
+                      <i class="fa fa-th"></i>
+                    </button>
+                    <button class="btn btn-grid" type="button">
+                      <i class="fa fa-th-list"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="sorting-box">
+                  <span class="name">Сортировать по: </span>
+                  <span class="radio-btn">Имени</span>
+                  <span class="radio-btn active">Популярности</span>
+                  <span class="radio-btn">Цене</span>
+                  <span class="increase">
+                    <img src="img/arrow.svg" alt="icon">
+                  </span>
+                  <span class="descending active">
+                    <img src="img/arrow.svg" alt="icon">
+                  </span>
+                </div>
+              </div>
+              <div class="category-list">
+                <div class="product-card product-card-small">
                   <div class="sticker">
                     <img src="img/stiker-1.svg" alt="sticker">
                   </div>
@@ -319,225 +272,408 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-card">
-                  <div class="img-box">
-                    <img src="img/Image 11.png" alt="foto product">
-                  </div>
-                  <div class="info-box">
-                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
-                    <span class="value">Платье ситцевое Черное</span>
-                    <div class="product-options">
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">2 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">3 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">4 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">5 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">6 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">7 года</span>
-                      </label>
-                    </div>
-                    <span class="price">1215 грн</span>
-                    <div class="btn-box">
-                      <button class="btn active" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-big-heart" />
-                        </svg>
-                      </button>
-                      <button class="btn active" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-cart" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card">
-                  <div class="img-box">
-                    <img src="img/Image 11.png" alt="foto product">
-                  </div>
-                  <div class="info-box">
-                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
-                    <span class="value">Платье ситцевое Черное</span>
-                    <div class="product-options">
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">2 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">3 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">4 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">5 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">6 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">7 года</span>
-                      </label>
-                    </div>
-                    <span class="price">1215 грн</span>
-                    <div class="btn-box">
-                      <button class="btn" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-big-heart" />
-                        </svg>
-                      </button>
-                      <button class="btn" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-cart" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card">
-                  <div class="img-box">
-                    <img src="img/Image 11.png" alt="foto product">
-                  </div>
-                  <div class="info-box">
-                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
-                    <span class="value">Платье ситцевое Черное</span>
-                    <div class="product-options">
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">2 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">3 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">4 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">5 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">6 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">7 года</span>
-                      </label>
-                    </div>
-                    <span class="price">1215 грн</span>
-                    <div class="btn-box">
-                      <button class="btn" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-big-heart" />
-                        </svg>
-                      </button>
-                      <button class="btn" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-cart" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card">
-                  <div class="img-box">
-                    <img src="img/Image 11.png" alt="foto product">
-                  </div>
-                  <div class="info-box">
-                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
-                    <span class="value">Платье ситцевое Черное</span>
-                    <div class="product-options">
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">2 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">3 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">4 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">5 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">6 года</span>
-                      </label>
-                      <label class="checkbox-box">
-                        <span class="text"></span>
-                        <input class="check-input" type="checkbox">
-                        <span class="checkbox-btn">7 года</span>
-                      </label>
-                    </div>
-                    <span class="price">1215 грн</span>
-                    <div class="btn-box">
-                      <button class="btn" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-big-heart" />
-                        </svg>
-                      </button>
-                      <button class="btn" type="button">
-                        <svg>
-                          <use href="img/sprite-options.svg#icon-cart" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card">
+                <div class="product-card product-card-small">
                   <div class="sticker">
-                    <img src="img/stiker.svg" alt="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
                   </div>
                   <div class="img-box">
                     <img src="img/Image 11.png" alt="foto product">
@@ -593,75 +729,262 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn-main" href="#">Смотреть больше</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <div class="box-left"></div>
-            <span class="title">НАШ БЛОГ<strong>И INSTAGRAMM</strong></span>
-            <div class="box-right"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="article-box">
-            <div class="article">
-              <div class="img-box">
-                <img src="img/Image 20.png" alt="foto article">
-              </div>
-              <div class="info-box">
-                <span class="date">Март 12, 2019</span>
-                <a class="title" href="#">7 идей, как сделать детскую комнату уютной и функциональной
-                </a>
-                <p>Комната ребенка — это маленький мир, в котором малыш должен чувствовать себя комфортно и открыто. Как
-                  же правильно оформить детскую и при этом сделать ее не только стильной, но и уютной? Об этом - в нашей
-                  статье.</p>
-              </div>
-            </div>
-            <div class="article">
-              <div class="img-box">
-                <img src="img/Image 21.png" alt="foto article">
-              </div>
-              <div class="info-box">
-                <span class="date">Март 12, 2019</span>
-                <a class="title" href="#">7 идей, как сделать детскую комнату уютной и функциональной
-                </a>
-                <p>Комната ребенка — это маленький мир, в котором малыш должен чувствовать себя комфортно и открыто. Как
-                  же правильно оформить детскую и при этом сделать ее не только стильной, но и уютной? Об этом - в нашей
-                  статье.</p>
-              </div>
+              <nav class="pagination-box" aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item page-prev"><a class="page-link" href="#">Предидущая</a></li>
+                  <li class="page-item"><a class="page-link  active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item page-next"><a class="page-link" href="#">Следующая</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <div class="gallery-box">
-            <div class="gallery-list">
-              <div class="gallery-item">
-                <img src="img/Image 22.png" alt="foto">
+          <div class="browsing-history-box">
+            <span class="title">НЕДАВНО ПРОСМОТРЕННЫЕ</span>
+            <div class="browsing-history-carousel owl-carousel owl-theme">
+              <div class="item">
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="gallery-item">
-                <img src="img/Image 23.png" alt="foto">
+              <div class="item">
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="gallery-item">
-                <img src="img/Image 24.png" alt="foto">
+              <div class="item">
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="gallery-item">
-                <img src="img/Image 25.png" alt="foto">
+              <div class="item">
+                <div class="product-card product-card-small">
+                  <div class="sticker">
+                    <img src="img/stiker-1.svg" alt="sticker">
+                  </div>
+                  <div class="img-box">
+                    <img src="img/Image 11.png" alt="foto product">
+                  </div>
+                  <div class="info-box">
+                    <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                    <span class="value">Платье ситцевое Черное</span>
+                    <div class="product-options">
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">2 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">3 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">4 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">5 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">6 года</span>
+                      </label>
+                      <label class="checkbox-box">
+                        <span class="text"></span>
+                        <input class="check-input" type="checkbox">
+                        <span class="checkbox-btn">7 года</span>
+                      </label>
+                    </div>
+                    <span class="price">1215 грн</span>
+                    <div class="btn-box">
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-big-heart" />
+                        </svg>
+                      </button>
+                      <button class="btn" type="button">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-cart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <a class="btn btn-main" href="#">
-              <img src="#" alt="icon">
-              <span>Перейти</span>
-            </a>
           </div>
         </div>
       </div>
@@ -670,53 +993,6 @@
     <footer class="footer">
       <div class="bi-2"></div>
       <div class="bi-1"></div>
-      <div class="footer-navigations-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="footer-navigations">
-                <nav class="navbar navbar-expand-lg">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                          <div class="nav-item-img">
-                            <img src="img/flower.svg" alt="nav item img" />
-                          </div>
-                          <span>ЛЕТНЯЯ АКЦИЯ</span>
-                          <!-- <span class="sr-only">(current)</span> -->
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">БРЕНДЫ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ДЕТСКАЯ ОДЕЖДА</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ДЕТСКАЯ ОБУВЬ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ДЕТСКИЕ АКСЕССУАРЫ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ИГРУШКИ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link hot" href="#">РАСПРОДАЖИ</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container">
         <div class="row">
           <div class="col-12">

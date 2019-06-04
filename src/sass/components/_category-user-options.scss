@@ -1,0 +1,100 @@
+.category-user-options {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .view {
+    display: flex;
+    align-items: center;
+
+    & .name {
+      color: #777776;
+      font-size: 14px;
+      font-weight: $Medium;
+      line-height: 14px;
+      margin-right: 12px;
+    }
+
+    & .btn-view-box {
+      display: flex;
+      align-items: center;
+      width: 86px;
+      height: 30px;
+      border-radius: 30px;
+      overflow: hidden;
+
+      & .btn {
+        flex: 0 0 50%;
+        height: 30px;
+        background-color: #f7faf9;
+
+        & .fa {
+          color: #a5c1c2;
+        }
+
+        .fa-th:before {
+          content: "\f00a";
+          margin-left: 3px;
+        }
+
+        & .fa-th-list:before {
+          content: "\f00b";
+          margin-right: 3px;
+        }
+      }
+
+      & .active {
+        background-color: $cadetblue-color;
+
+        & .fa {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  & .sorting-box {
+    display: flex;
+    align-items: center;
+
+    & .name {
+      color: #777776;
+      font-size: 14px;
+      font-weight: $Medium;
+      line-height: 30px;
+      margin-right: 12px;
+    }
+
+    & .radio-btn {
+      height: 30px;
+      border-radius: 30px;
+      padding: 0 30px;
+      margin-right: 3px;
+      color: $cadetblue-color;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+
+    & .increase,
+    .descending {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .descending {
+      transform: rotate(180deg);
+    }
+
+    & .active {
+      background-color: #f7faf9;
+    }
+  }
+}
