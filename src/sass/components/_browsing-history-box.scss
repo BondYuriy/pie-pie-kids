@@ -14,6 +14,7 @@
   & .browsing-history-carousel {
     width: 590px;
     margin: auto;
+    padding-bottom: 80px;
 
     & .owl-stage-outer {
       overflow: visible;
@@ -24,6 +25,73 @@
 
       & .owl-stage .active {
         opacity: 1;
+      }
+    }
+
+    & .owl-nav {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 72px;
+
+      & .owl-prev,
+      .owl-next {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #f7faf9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .fa {
+          color: #a5c1c2;
+        }
+
+        &:hover {
+          background-color: $yellow-color;
+
+          & .fa {
+            color: $title-color;
+          }
+        }
+
+        &:active {
+          background-color: #f7faf9;
+
+          & .fa {
+            color: #a5c1c2;
+          }
+        }
+      }
+
+      & .owl-prev {
+        margin-right: 110px;
+      }
+    }
+
+    & .owl-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+
+      & .owl-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #f7faf9;
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      & .active {
+        background-color: #a5c1c2;
       }
     }
   }

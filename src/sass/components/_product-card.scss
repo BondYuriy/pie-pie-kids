@@ -109,6 +109,11 @@
           position: absolute;
           left: 0;
           top: 0;
+
+          &:hover {
+            border: 1px solid $yellow-color;
+            color: $yellow-color;
+          }
         }
 
         & .form-check-label {
@@ -128,9 +133,15 @@
       }
 
       & .checkbox-box input:checked ~ .checkbox-btn {
-        border: 1px solid #f47c53;
-        background-color: #f47c53;
+        border: 1px solid $red-color;
+        background-color: $red-color;
         color: #ffffff;
+
+        &:hover {
+          border: 1px solid $red-color;
+          background-color: $red-color;
+          color: #ffffff;
+        }
       }
     }
 

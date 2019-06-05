@@ -30,11 +30,19 @@
         height: 30px;
         background-color: #f7faf9;
 
+        &:hover {
+          background-color: $yellow-color;
+
+          & .fa {
+            color: $title-color;
+          }
+        }
+
         & .fa {
           color: #a5c1c2;
         }
 
-        .fa-th:before {
+        & .fa-th:before {
           content: "\f00a";
           margin-left: 3px;
         }
@@ -50,6 +58,14 @@
 
         & .fa {
           color: $white;
+        }
+
+        &:hover {
+          background-color: $cadetblue-color;
+
+          & .fa {
+            color: $white;
+          }
         }
       }
     }
@@ -76,6 +92,11 @@
       font-size: 10px;
       font-weight: 500;
       line-height: 30px;
+
+      &:hover {
+        background-color: $yellow-color;
+        color: $title-color;
+      }
     }
 
     & .increase,
@@ -87,14 +108,40 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      & svg {
+        display: block;
+        width: 8px;
+        height: 11px;
+        fill: $cadetblue-color;
+      }
+
+      &:hover {
+        background-color: $yellow-color;
+        color: $title-color;
+
+        & svg {
+          fill: $title-color;
+        }
+      }
     }
 
     & .descending {
       transform: rotate(180deg);
+      margin-left: 5px;
     }
 
     & .active {
       background-color: #f7faf9;
+
+      &:hover {
+        background-color: #f7faf9;
+        color: $cadetblue-color;
+
+        & svg {
+          fill: $cadetblue-color;
+        }
+      }
     }
   }
 }
