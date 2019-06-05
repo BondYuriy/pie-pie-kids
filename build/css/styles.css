@@ -7625,6 +7625,53 @@ a:hover {
 	opacity: 1;
 }
 
+/* тут будут стили мега фильтра*/
+
+.category-filter {
+	background-color: #a5c1c2;
+}
+
+.content-box-wrapper {
+	background-color: #f7faf9;
+}
+
+.content-column-box {
+	background-color: #f7faf9;
+	padding: 47px 25px;
+}
+
+.content-column-box > .title {
+	color: #231f20;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.content-column-box .column {
+	-webkit-columns: 200px 2;
+	-moz-columns: 200px 2;
+	columns: 200px 2;
+	-webkit-column-gap: 80px;
+	-moz-column-gap: 80px;
+	column-gap: 80px;
+	column-rule: 1px solid #ccc;
+	-moz-column-rule: 1px solid #ccc;
+	-webkit-column-rule: 1px solid #ccc;
+	color: #c3c1c0;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+.content-column-box .column .title {
+	color: #777776;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
 .header {
 	position: fixed;
 	left: 0;
