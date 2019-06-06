@@ -8706,6 +8706,8 @@ a:hover {
 .product-item-box .product-info-box .info-header .favorites button {
 	border: 0;
 	padding: 0;
+	outline: none;
+	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0);
 }
 
@@ -8853,6 +8855,7 @@ a:hover {
 	padding: 0;
 	border: 0;
 	border-radius: 0;
+	cursor: pointer;
 	appearance: none;
 	-moz-appearance: none;
 	-webkit-appearance: none;
