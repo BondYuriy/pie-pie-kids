@@ -1,0 +1,142 @@
+.log-wrapper {
+  overflow: hidden;
+  position: relative;
+
+  & .bi-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    & img {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+.personal-area {
+  height: 900px;
+  padding: 65px 0;
+  display: flex;
+  color: #777776;
+  font-size: 15px;
+  font-weight: $light;
+  line-height: 20px;
+
+  & .login-box {
+    flex: 0 0 42%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 15px 0 0 15px;
+    padding: 50px 55px 93px 55px;
+
+    & .title {
+      color: $title-color;
+      font-size: 20px;
+      font-weight: $Bold;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      margin-bottom: 78px;
+
+      & a {
+        color: $red-color;
+        font-weight: $Medium;
+        text-decoration: underline;
+
+        &:hover {
+          color: $yellow-color;
+        }
+      }
+    }
+
+    & form {
+      & label {
+        display: block;
+        color: $cadetblue-color;
+        font-size: 13px;
+        font-weight: $Regular;
+        line-height: 20px;
+        margin-bottom: 5px;
+        padding-left: 12px;
+      }
+
+      & input {
+        border: 0;
+        display: block;
+        width: 100%;
+        height: 60px;
+        border-radius: 16px;
+        background-color: #f7faf9;
+        opacity: 0.6;
+        margin-bottom: 18px;
+        padding: 0 12px;
+        border: 2px solid #f7faf9;
+        line-height: 46px;
+
+        &:focus {
+          outline: none;
+          border: 2px solid #a5c1c2;
+        }
+      }
+
+      & .btn {
+        margin: 16px 0 106px 0;
+      }
+    }
+
+    & .social-btn-box ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & li {
+        & .btn-social {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 110px;
+          height: 32px;
+          border-radius: 23px;
+          color: $white-text;
+          font-size: 13px;
+          font-weight: $Regular;
+          line-height: 32px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          & img {
+            display: block;
+            height: 16px;
+            width: auto;
+            margin-right: 10px;
+          }
+        }
+
+        & .social-twitter {
+          background-color: #26a6d1;
+        }
+
+        & .social-google {
+          background-color: #dc4e41;
+        }
+
+        & .social-facebook {
+          background-color: #3b5998;
+        }
+      }
+    }
+  }
+}
+
+input[type="password"] {
+  font-size: 30px;
+}

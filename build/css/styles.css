@@ -8962,6 +8962,145 @@ a:hover {
 	padding-left: 20px;
 }
 
+.log-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.log-wrapper .bi-log {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.log-wrapper .bi-log img {
+	display: block;
+	width: auto;
+	height: 100%;
+}
+
+.personal-area {
+	height: 900px;
+	padding: 65px 0;
+	display: flex;
+	color: #777776;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+
+.personal-area .login-box {
+	flex: 0 0 42%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 15px 0 0 15px;
+	padding: 50px 55px 93px 55px;
+}
+
+.personal-area .login-box .title {
+	color: #231f20;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.personal-area .login-box p {
+	margin-bottom: 78px;
+}
+
+.personal-area .login-box p a {
+	color: #f47c53;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.personal-area .login-box p a:hover {
+	color: #e5d11a;
+}
+
+.personal-area .login-box form label {
+	display: block;
+	color: #a5c1c2;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 5px;
+	padding-left: 12px;
+}
+
+.personal-area .login-box form input {
+	border: 0;
+	display: block;
+	width: 100%;
+	height: 60px;
+	border-radius: 16px;
+	background-color: #f7faf9;
+	opacity: 0.6;
+	margin-bottom: 18px;
+	padding: 0 12px;
+	border: 2px solid #f7faf9;
+	line-height: 46px;
+}
+
+.personal-area .login-box form input:focus {
+	outline: none;
+	border: 2px solid #a5c1c2;
+}
+
+.personal-area .login-box form .btn {
+	margin: 16px 0 106px 0;
+}
+
+.personal-area .login-box .social-btn-box ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.personal-area .login-box .social-btn-box ul li .btn-social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 110px;
+	height: 32px;
+	border-radius: 23px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 32px;
+}
+
+.personal-area .login-box .social-btn-box ul li .btn-social:hover {
+	opacity: 0.8;
+}
+
+.personal-area .login-box .social-btn-box ul li .btn-social img {
+	display: block;
+	height: 16px;
+	width: auto;
+	margin-right: 10px;
+}
+
+.personal-area .login-box .social-btn-box ul li .social-twitter {
+	background-color: #26a6d1;
+}
+
+.personal-area .login-box .social-btn-box ul li .social-google {
+	background-color: #dc4e41;
+}
+
+.personal-area .login-box .social-btn-box ul li .social-facebook {
+	background-color: #3b5998;
+}
+
+input[type="password"] {
+	font-size: 30px;
+}
+
 /* === heeader === */
 
 /* === footer === */
