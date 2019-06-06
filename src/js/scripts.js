@@ -34,7 +34,7 @@ $(".home-carousel").owlCarousel({
   }
 });
 
-$(".browsing-history-carousel").owlCarousel({
+$(".options-carousel").owlCarousel({
   loop: true,
   margin: 15,
   nav: true,
@@ -53,4 +53,39 @@ $(".browsing-history-carousel").owlCarousel({
       items: 2
     }
   }
+});
+
+//===================================================
+
+const btnSub = document.querySelector(".btn-sub");
+const btnAdd = document.querySelector(".btn-add");
+const valueResult = document.querySelector(".value");
+
+class Counter {
+  constructor() {
+    this.value = document.querySelector(".value").textContent;
+  }
+
+  addCounter() {
+    this.value = Number(this.value) + 1;
+    valueResult.textContent = this.value;
+  }
+
+  subCounter() {
+    if (this.value > 0) {
+      this.value = Number(this.value) - 1;
+      valueResult.textContent = this.value;
+    }
+  }
+}
+
+const counter = new Counter();
+
+btnAdd.addEventListener("click", counter.addCounter.bind(counter));
+btnSub.addEventListener("click", counter.subCounter.bind(counter));
+
+//=================================================
+
+$(".select-toggle").click(function() {
+  $(this).toggleClass("open");
 });

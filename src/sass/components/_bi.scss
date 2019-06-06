@@ -1,0 +1,33 @@
+.bi-1,
+.bi-2,
+.bi-3,
+.bi-4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.bi-1 {
+  width: 363px;
+  height: 253px;
+  background-image: url("../img/bi-1.svg");
+}
+
+.bi-2 {
+  width: 406px;
+  height: 283px;
+  background-image: url("../img/bi-2.svg");
+}
+
+.bi-3 {
+  width: 403px;
+  height: 309px;
+  background-image: url("../img/bi-3.svg");
+}
+
+.bi-4 {
+  width: 315px;
+  height: 253px;
+  background-image: url("../img/bi-4.svg");
+}

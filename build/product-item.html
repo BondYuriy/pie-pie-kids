@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pie Pie Kids</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+  <script src="js/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-main-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="header-main">
+                <div class="common-options">
+                  <div class="social">
+                    <ul>
+                      <li>
+                        <a class="fa icon-facebook" href="#">
+                          <svg>
+                            <use href="img/sprite-options.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fa icon-instagram" href="#">
+                          <svg>
+                            <use href="img/sprite-options.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fa icon-youtube" href="#">
+                          <svg>
+                            <use href="img/sprite-options.svg#icon-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li>
+                        <a href="#">Главная</a>
+                      </li>
+                      <li>
+                        <a href="#">О нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="img/pie_logo.svg" alt="logo">
+                  </a>
+                </div>
+                <div class="user-options">
+                  <div class="languages">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рус</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Рус</a>
+                        <a class="dropdown-item" href="#">Укр</a>
+                        <a class="dropdown-item" href="#">En</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="currency-unit">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Грн
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <a class="dropdown-item" href="#">Грн</a>
+                        <a class="dropdown-item" href="#">Dollar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="search" action="#">
+                    <input type="text" placeholder="Что Вы ищите?">
+                    <button class="btn-search" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-magnifying-glass"></use>
+                      </svg>
+                    </button>
+                  </form>
+                  <a class="personal-area" href="#">
+                    <svg>
+                      <use href="img/sprite-options.svg#icon-man-user"></use>
+                    </svg>
+                  </a>
+                  <a class="favorites" href="#">
+                    <svg>
+                      <use href="img/sprite-options.svg#icon-big-heart"></use>
+                    </svg>
+                  </a>
+                  <button class="basket" type="button">
+                    <div class="img-box">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-cart"></use>
+                      </svg>
+                      <span class="number-goods">1</span>
+                    </div>
+                    <span class="total-amount">2215 грн</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigations-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="navigations">
+                <nav class="navbar navbar-expand-lg">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                          <div class="nav-item-img">
+                            <img src="img/flower.svg" alt="nav item img">
+                          </div>
+                          <span>ЛЕТНЯЯ АКЦИЯ</span>
+                          <!-- <span class="sr-only">(current)</span> -->
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="category.html">БРЕНДЫ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ДЕТСКАЯ ОДЕЖДА</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ДЕТСКАЯ ОБУВЬ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ДЕТСКИЕ АКСЕССУАРЫ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ИГРУШКИ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hot" href="#">РАСПРОДАЖИ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumb-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">ГЛАВНАЯ</a></li>
+                <li class="breadcrumb-item"><a href="#">ДЕТСКАЯ ОДЕЖДА</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ПЛАТЬЯ И САРАФАНЫ</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-wrapper">
+      <div class="bi-1"></div>
+      <div class="bi-3"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="product-item-box">
+              <div class="product-img-box">
+                <ul>
+                  <li class="img-main">
+                    <a href="#">
+                      <img src="img/5b4c6625e1970.jpg" alt="foto product">
+                    </a>
+                  </li>
+                  <li class="img-additional">
+                    <a href="#">
+                      <img src="img/5b4c6625e1970-2.jpg" alt="foto product">
+                    </a>
+                  </li>
+                  <li class="img-additional">
+                    <a href="#">
+                      <img src="img/5b4c6625e1970-3.png" alt="foto product">
+                    </a>
+                  </li>
+                  <li class="img-additional">
+                    <a href="#">
+                      <img src="img/5b4c6625e1970-4.png" alt="foto product">
+                    </a>
+                  </li>
+                </ul>
+                <div class="social-box">
+                  <a class="social-link" href="#">
+                    <svg>
+                      <use href="img/sprite-link.svg#icon-link"></use>
+                    </svg>
+                  </a>
+                  <a class="social-facebook" href="#">
+                    <svg>
+                      <use href="img/sprite-options.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="social-twitter" href="#">
+                    <svg>
+                      <use href="img/sprite-link.svg#icon-twitter-logo-button"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="product-info-box">
+                <div class="info-header">
+                  <ul>
+                    <li class="product-code">Артикул<strong>180903</strong></li>
+                    <li class="available is-available">В наличии</li>
+                  </ul>
+                  <div class="favorites">
+                    <button type="button" class="active">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-big-heart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h1 class="title">Toddler Girl</h1>
+                <p class="text">Трикотажное платье с длинным рукавом для девочки</p>
+                <ul class="price-box">
+                  <li>
+                    <span>Акционная цена</span>
+                    <h2 class="promotional-price">1215 грн</h2>
+                  </li>
+                  <li>
+                    <span>Старая цена</span>
+                    <h2 class="price">1215 грн</h2>
+                  </li>
+                </ul>
+                <div class="order-form">
+                  <div class="size-box">
+                    <div class="form-select">
+                      <label for="control-select" class="select-toggle">Example select
+                        <span class="as"></span>
+                        <select class="form-control" id="control-select">
+                          <option selected="">Выбрать размер</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="size-table">
+                      <img src="img/tshirt.svg" alt="icon">
+                      <div class="btn-size-table">Размерная сетка</div>
+                    </div>
+                  </div>
+                  <div class="counter-product">
+                    <button class="btn btn-sub" type="button">-</button>
+                    <span class="value">0</span>
+                    <button class="btn btn-add" type="button">+</button>
+                  </div>
+                  <div class="btn-box">
+                    <button class="btn btn-cadetblue" type="button">Добавить в корзину</button>
+                    <button class="btn btn-transparent" type="button">Добавить в корзину</button>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="article-product">
+                    <div class="title">Описание товара:</div>
+                    <p>Милое трикотажное платье для настоящей принцессы.
+                      На лицевой стороне два кармашка с контрастным принтом.
+                      Платье имеет натуральной состав. Все швы качественно
+                      обработанным. Прекрасный наряд станет самым любимым
+                      платьем юной модницы.</p>
+                  </div>
+                  <div class="article-product">
+                    <div class="title">Спецификация:</div>
+                    <ul>
+                      <li>Состав: 70% Катон, 30% нейлон</li>
+                      <li>Цвет: розовый</li>
+                      <li>Застежка: нет</li>
+                      <li>Рекомендации: Ручная стирка (30 С)</li>
+                      <li>Производство: Италия</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="options-carousel-box">
+          <span class="title">ВАМ МОЖЕТ ПОНРАВИТЬСЯ</span>
+          <div class="owl-carousel owl-theme browsing-history-carousel options-carousel">
+            <div class="item">
+              <div class="product-card product-card-small">
+                <div class="sticker">
+                  <img src="img/stiker-1.svg" alt="sticker">
+                </div>
+                <a href="#" class="img-box">
+                  <img src="img/Image 11.png" alt="foto product">
+                </a>
+                <div class="info-box">
+                  <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                  <span class="value">Платье ситцевое Черное</span>
+                  <div class="product-options">
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">2 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">3 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">4 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">5 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">6 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">7 года</span>
+                    </label>
+                  </div>
+                  <span class="price">1215 грн</span>
+                  <div class="btn-box">
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-big-heart"></use>
+                      </svg>
+                    </button>
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-card product-card-small">
+                <div class="sticker">
+                  <img src="img/stiker-1.svg" alt="sticker">
+                </div>
+                <a href="#" class="img-box">
+                  <img src="img/Image 11.png" alt="foto product">
+                </a>
+                <div class="info-box">
+                  <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                  <span class="value">Платье ситцевое Черное</span>
+                  <div class="product-options">
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">2 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">3 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">4 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">5 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">6 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">7 года</span>
+                    </label>
+                  </div>
+                  <span class="price">1215 грн</span>
+                  <div class="btn-box">
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-big-heart"></use>
+                      </svg>
+                    </button>
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-card product-card-small">
+                <div class="sticker">
+                  <img src="img/stiker-1.svg" alt="sticker">
+                </div>
+                <a href="#" class="img-box">
+                  <img src="img/Image 11.png" alt="foto product">
+                </a>
+                <div class="info-box">
+                  <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                  <span class="value">Платье ситцевое Черное</span>
+                  <div class="product-options">
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">2 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">3 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">4 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">5 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">6 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">7 года</span>
+                    </label>
+                  </div>
+                  <span class="price">1215 грн</span>
+                  <div class="btn-box">
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-big-heart"></use>
+                      </svg>
+                    </button>
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-card product-card-small">
+                <div class="sticker">
+                  <img src="img/stiker-1.svg" alt="sticker">
+                </div>
+                <a href="#" class="img-box">
+                  <img src="img/Image 11.png" alt="foto product">
+                </a>
+                <div class="info-box">
+                  <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                  <span class="value">Платье ситцевое Черное</span>
+                  <div class="product-options">
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">2 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">3 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">4 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">5 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">6 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">7 года</span>
+                    </label>
+                  </div>
+                  <span class="price">1215 грн</span>
+                  <div class="btn-box">
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-big-heart"></use>
+                      </svg>
+                    </button>
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-card product-card-small">
+                <div class="sticker">
+                  <img src="img/stiker-1.svg" alt="sticker">
+                </div>
+                <a href="#" class="img-box">
+                  <img src="img/Image 11.png" alt="foto product">
+                </a>
+                <div class="info-box">
+                  <a class="title" href="#">ЭМИЛЬ И ИДА</a>
+                  <span class="value">Платье ситцевое Черное</span>
+                  <div class="product-options">
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">2 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">3 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">4 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">5 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">6 года</span>
+                    </label>
+                    <label class="checkbox-box">
+                      <span class="text"></span>
+                      <input class="check-input" type="checkbox">
+                      <span class="checkbox-btn">7 года</span>
+                    </label>
+                  </div>
+                  <span class="price">1215 грн</span>
+                  <div class="btn-box">
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-big-heart"></use>
+                      </svg>
+                    </button>
+                    <button class="btn" type="button">
+                      <svg>
+                        <use href="img/sprite-options.svg#icon-cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="bi-2"></div>
+      <div class="bi-1"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-box">
+              <div class="footer-nav-box">
+                <nav>
+                  <ul>
+                    <li class="title">Информация</li>
+                    <li>
+                      <a href="#">Информация</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                      <a href="#">Реквизиты</a>
+                    </li>
+                    <li>
+                      <a href="#">Вакансии</a>
+                    </li>
+                    <li>
+                      <a href="#">Сотрудничество</a>
+                    </li>
+                    <li>
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav>
+                  <ul>
+                    <li class="title">Сервис</li>
+                    <li>
+                      <a href="#">Оплата и доставка</a>
+                    </li>
+                    <li>
+                      <a href="#">Обмен и возврат</a>
+                    </li>
+                    <li>
+                      <a href="#">Программа лояльности</a>
+                    </li>
+                    <li>
+                      <a href="#">Политика безопасности</a>
+                    </li>
+                    <li>
+                      <a href="#">Поиск</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-logo-box">
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a class="fa icon-facebook" href="#">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="fa icon-instagram" href="#">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="fa icon-youtube" href="#">
+                        <svg>
+                          <use href="img/sprite-options.svg#icon-youtube"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <img src="img/pie-logo-footer.svg" alt="logo">
+                  </a>
+                </div>
+                <span class="copyright">© 2014-2019<a href="#">Интернет-магазин PiePieKids</a></span>
+              </div>
+              <div class="footer-options">
+                <span class="title">Подписка на новости</span>
+                <form action="#">
+                  <input type="text" placeholder="Введите ваш email">
+                  <button class="btn" type="button">Подписаться</button>
+                </form>
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="#">О компании</a>
+                    </li>
+                    <li>
+                      <a href="#">Подарочные сертификаты</a>
+                    </li>
+                    <li>
+                      <a href="#">Бренды</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="types-payments">
+                  <img src="img/Image 26.png" alt="types-payments">
+                  <img src="img/Image 27.png" alt="types-payments">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/tether.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/jquery.cookie.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

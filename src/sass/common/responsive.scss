@@ -221,6 +221,10 @@
       height: 0;
       overflow: hidden;
     }
+
+    .breadcrumb-wrapper {
+      padding-top: 160px;
+    }
   }
 }
 
@@ -279,6 +283,17 @@
         }
       }
     }
+  }
+}
+
+/* === gallery-box === */
+
+@media (max-width: 1919px) {
+  .bi-1,
+  .bi-2,
+  .bi-3,
+  .bi-4 {
+    display: none;
   }
 }
 

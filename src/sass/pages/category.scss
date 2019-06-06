@@ -1,3 +1,17 @@
+.category-wrapper {
+  overflow: hidden;
+
+  & .bi-1 {
+    right: -65px;
+    top: 370px;
+  }
+
+  & .bi-3 {
+    left: 60px;
+    bottom: -830px;
+  }
+}
+
 .category-box {
   display: flex;
   justify-content: space-between;

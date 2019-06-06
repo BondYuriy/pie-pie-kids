@@ -4,25 +4,11 @@
 
 .home-carousel-wrapper {
   & .bi-3 {
-    width: 403px;
-    height: 309px;
-    background-image: url("../img/bi-3.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
     left: -20px;
     top: 594px;
   }
 
   & .bi-1 {
-    width: 363px;
-    height: 253px;
-    background-image: url("../img/bi-1.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
     right: 0;
     bottom: -65px;
   }
@@ -143,13 +129,6 @@
   position: relative;
 
   & .bi-2 {
-    width: 406px;
-    height: 283px;
-    background-image: url("../img/bi-2.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
     left: 0;
     bottom: -75px;
   }
@@ -191,25 +170,11 @@
   position: relative;
 
   & .bi-2 {
-    width: 406px;
-    height: 283px;
-    background-image: url("../img/bi-2.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
     right: -15px;
     bottom: 85px;
   }
 
   & .bi-1 {
-    width: 363px;
-    height: 253px;
-    background-image: url("../img/bi-1.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
     left: 140px;
     bottom: -140px;
   }

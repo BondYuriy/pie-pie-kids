@@ -7,6 +7,7 @@
 @import "common/basic.scss";
 @import "common/btn.scss";
 @import "components/social";
+@import "components/bi";
 @import "components/languages";
 @import "components/home-carousel";
 @import "components/section-title";
@@ -16,11 +17,12 @@
 @import "components/breadcrumb";
 @import "components/pagination";
 @import "components/category-user-options";
-@import "components/browsing-history-box";
+@import "components/options-carousel";
 @import "components/category-filter";
 @import "components/content-column-box";
 @import "common/header.scss";
 @import "common/footer.scss";
 @import "pages/home.scss";
 @import "pages/category.scss";
+@import "pages/product-item.scss";
 @import "common/responsive.scss";
