@@ -9098,6 +9098,7 @@ a:hover {
 }
 
 input[type="password"] {
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
 }
 
@@ -9176,10 +9177,6 @@ body.sticky-header .header {
 body.sticky-header .header-main-wrapper .header-main {
 	height: 0;
 	overflow: hidden;
-}
-
-body.sticky-header .breadcrumb-wrapper {
-	padding-top: 160px;
 }
 
 }
