@@ -20,7 +20,6 @@
 }
 
 .personal-area {
-  height: 900px;
   padding: 65px 0;
   display: flex;
   color: #777776;
@@ -30,7 +29,6 @@
 
   & .login-box {
     flex: 0 0 42%;
-    height: 100%;
     background-color: rgba(255, 255, 255, 0.45);
     border-radius: 15px 0 0 15px;
     padding: 50px 55px 93px 55px;
@@ -43,8 +41,6 @@
     }
 
     & p {
-      margin-bottom: 78px;
-
       & a {
         color: $red-color;
         font-weight: $Medium;
@@ -57,6 +53,8 @@
     }
 
     & form {
+      margin-top: 78px;
+
       & label {
         display: block;
         color: $cadetblue-color;
@@ -138,6 +136,5 @@
 }
 
 input[type="password"] {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
 }

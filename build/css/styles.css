@@ -8984,7 +8984,6 @@ a:hover {
 }
 
 .personal-area {
-	height: 900px;
 	padding: 65px 0;
 	display: flex;
 	color: #777776;
@@ -8995,7 +8994,6 @@ a:hover {
 
 .personal-area .login-box {
 	flex: 0 0 42%;
-	height: 100%;
 	background-color: rgba(255, 255, 255, 0.45);
 	border-radius: 15px 0 0 15px;
 	padding: 50px 55px 93px 55px;
@@ -9008,10 +9006,6 @@ a:hover {
 	margin-bottom: 20px;
 }
 
-.personal-area .login-box p {
-	margin-bottom: 78px;
-}
-
 .personal-area .login-box p a {
 	color: #f47c53;
 	font-weight: 500;
@@ -9020,6 +9014,10 @@ a:hover {
 
 .personal-area .login-box p a:hover {
 	color: #e5d11a;
+}
+
+.personal-area .login-box form {
+	margin-top: 78px;
 }
 
 .personal-area .login-box form label {
@@ -9098,8 +9096,105 @@ a:hover {
 }
 
 input[type="password"] {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
+}
+
+.personal-area .sigin-box {
+	flex: 0 0 58%;
+	background-color: rgba(119, 119, 118, 0.48);
+	border-radius: 0 15px 15px 0;
+	padding: 50px 175px 84px 128px;
+}
+
+.personal-area .title {
+	color: #f7faf9;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 17px;
+}
+
+.personal-area .title span {
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 5px;
+}
+
+.personal-area form label {
+	display: block;
+	color: #f7faf9;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+	padding-left: 12px;
+	margin-bottom: 5px;
+}
+
+.personal-area form input {
+	border: 0;
+	display: block;
+	width: 100%;
+	height: 60px;
+	border-radius: 16px;
+	background-color: #f7faf9;
+	opacity: 0.6;
+	margin-bottom: 18px;
+	padding: 0 12px;
+	border: 2px solid #f7faf9;
+	line-height: 46px;
+}
+
+.personal-area form input:focus {
+	outline: none;
+	border: 2px solid #a5c1c2;
+}
+
+.personal-area form .checkbox-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 11px;
+}
+
+.personal-area form .checkbox-box input[type="checkbox"] {
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	transition: all 0.15s ease-out 0s;
+	background: #fff;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+}
+
+.personal-area form .checkbox-box input[type="checkbox"]:checked::before {
+	display: inline-block;
+	content: "";
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #a5c1c2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.personal-area form .checkbox-box .checkbox-label {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.personal-area form .btn {
+	display: block;
+	margin: auto;
 }
 
 /* === heeader === */
