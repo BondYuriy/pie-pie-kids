@@ -48,6 +48,16 @@
 
       & .logo {
         flex: 0 0 204px;
+
+        & a {
+          display: block;
+
+          & img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+        }
       }
 
       & .user-options {
