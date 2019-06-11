@@ -306,8 +306,12 @@
 }
 
 @media (max-width: 991px) {
-  .home-carousel-box .home-carousel .item .img-box {
-    height: 335px;
+  .home-carousel-box {
+    padding: 190px 0 22px 0;
+
+    & .home-carousel .item .img-box {
+      height: 335px;
+    }
   }
 }
 

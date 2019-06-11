@@ -12717,6 +12717,10 @@ body.sticky-header .header-main-wrapper .header-main {
 	margin-bottom: 0;
 }
 
+.home-carousel-box {
+	padding: 190px 0 22px 0;
+}
+
 .home-carousel-box .home-carousel .item .img-box {
 	height: 335px;
 }
