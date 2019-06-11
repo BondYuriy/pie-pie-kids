@@ -1,5 +1,5 @@
 .product-card {
-  height: 480px;
+  height: 490px;
   position: relative;
   background-color: $white;
 
@@ -34,6 +34,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 10px;
 
     & img {
       display: block;
@@ -200,7 +201,7 @@
 }
 
 .product-card-small {
-  height: 385px;
+  height: 395px;
 
   & .img-box {
     height: 260px;

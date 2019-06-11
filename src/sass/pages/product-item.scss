@@ -49,12 +49,7 @@
 
       & .img-additional {
         flex: 0 0 32%;
-        margin-right: 0.5%;
         margin-bottom: 7px;
-
-        &:nth-child(3n + 1) {
-          margin-right: 0;
-        }
 
         & a {
           display: flex;

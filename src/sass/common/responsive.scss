@@ -7,72 +7,25 @@
   }
 }
 
+@media (min-width: 992px) {
+  .nav-item-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
-  .header {
-    & .header-box {
-      height: 80px;
+  .navigations-wrapper {
+    border: 0;
+  }
 
-      & .logo {
-        flex: 0 0 90px;
-        height: 76px;
-      }
+  .header-main .common-options {
+    display: none;
+    width: 0;
+    height: 0;
+  }
 
-      & .nav-box {
-        flex: 0 0 auto;
-        flex-direction: row-reverse;
-
-        & .navigations {
-          margin-left: auto;
-
-          & .navbar {
-            padding: 0;
-
-            & .navbar-collapse .navbar-nav {
-              & .nav-item {
-                border: 0;
-                margin: 0;
-                margin-bottom: 50px;
-
-                &:last-child {
-                  margin-bottom: 0;
-                }
-
-                &:hover {
-                  border: 0;
-                }
-
-                & .nav-link {
-                  padding-bottom: 5px;
-                  font-size: 20px;
-                }
-
-                & .btn {
-                  display: block;
-                  padding: 11px;
-
-                  & span {
-                    font-size: 20px;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        & .active span {
-          font-size: 20px;
-          color: $yellow-color;
-        }
-      }
-
-      & .user-options {
-        padding-right: 70px;
-
-        & .login {
-          margin-right: 30px;
-        }
-      }
-    }
+  .navigations {
+    justify-content: flex-start;
   }
 
   .navbar-toggler {
@@ -84,7 +37,7 @@
     background-color: $cadetblue-color;
     outline: none !important;
     position: absolute;
-    right: 0;
+    left: 0;
     z-index: 10;
   }
 
@@ -214,17 +167,13 @@
 @media (min-width: 320px) {
   body.sticky-header {
     .header {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0);
     }
 
     .header-main-wrapper .header-main {
       height: 0;
       overflow: hidden;
     }
-
-    // .breadcrumb-wrapper {
-    //   padding-top: 160px;
-    // }
   }
 }
 
@@ -286,7 +235,7 @@
   }
 }
 
-/* === gallery-box === */
+/* === bi === */
 
 @media (max-width: 1919px) {
   .bi-1,
@@ -330,14 +279,34 @@
   }
 }
 
+/* === options-carousel === */
+
+@media (max-width: 1199px) {
+  .options-carousel-box {
+    overflow: visible;
+
+    & .options-carousel {
+      width: 450px;
+    }
+  }
+}
+
 /* === product-card === */
 
 @media (max-width: 1199px) {
   .product-card {
-    height: 435px;
+    height: 445px;
 
     & .img-box {
       height: 298px;
+    }
+  }
+
+  .product-card-small {
+    height: 355px;
+
+    & .img-box {
+      height: 220px;
     }
   }
 }
@@ -353,32 +322,6 @@
 }
 
 /* === home page === */
-
-@media (max-width: 1199px) {
-  .home-carousel-wrapper {
-    & .bi-1 {
-      display: none;
-    }
-
-    & .bi-3 {
-      display: none;
-    }
-  }
-
-  .product-list-wrapper .bi-2 {
-    display: none;
-  }
-
-  .footer {
-    & .bi-2 {
-      display: none;
-    }
-
-    & .bi-1 {
-      display: none;
-    }
-  }
-}
 
 @media (min-width: 992px) {
   .product-card-box .product-card-list .product-card {
@@ -421,6 +364,10 @@
         bottom: 5px;
       }
     }
+
+    & .item-info .value {
+      font-size: 20px;
+    }
   }
 
   .article-box .article {
@@ -431,5 +378,50 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+/* === log-in === */
+
+@media (max-width: 1199px) {
+  .personal-area-box .login-box {
+    flex: 0 0 50%;
+  }
+}
+
+/* === product-item === */
+
+@media (max-width: 1199px) {
+  .product-item-box .product-img-box ul {
+    & .img-main {
+      flex: 0 0 415px;
+
+      & a {
+        width: 415px;
+        height: 415px;
+      }
+    }
+
+    & .img-additional {
+      margin-right: 0.5%;
+
+      &:nth-child(3n + 1) {
+        margin-right: 0;
+      }
+
+      & a {
+        width: 132px;
+        height: 136px;
+      }
+    }
+  }
+}
+
+/* === sig-in === */
+
+@media (max-width: 1199px) {
+  .personal-area-box .sigin-box {
+    flex: 0 0 50%;
+    padding: 50px 55px 84px 55px;
   }
 }
