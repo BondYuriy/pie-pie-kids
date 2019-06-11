@@ -77,12 +77,6 @@
         font-weight: $Medium;
       }
     }
-
-    &:hover {
-      & .item-info {
-        bottom: 30px;
-      }
-    }
   }
 
   & .background-red::before {
