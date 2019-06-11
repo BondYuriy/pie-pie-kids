@@ -54,5 +54,13 @@
     & .page-next {
       margin-left: 10px;
     }
+
+    & .page-prev-mobile,
+    .page-next-mobile {
+      display: none;
+      min-width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
   }
 }

@@ -55,37 +55,37 @@ $(".options-carousel").owlCarousel({
   }
 });
 
-//===================================================
+//==================================================
 
-const btnSub = document.querySelector(".btn-sub");
-const btnAdd = document.querySelector(".btn-add");
-const valueResult = document.querySelector(".value");
-
-class Counter {
-  constructor() {
-    this.value = document.querySelector(".value").textContent;
-  }
-
-  addCounter() {
-    this.value = Number(this.value) + 1;
-    valueResult.textContent = this.value;
-  }
-
-  subCounter() {
-    if (this.value > 0) {
-      this.value = Number(this.value) - 1;
-      valueResult.textContent = this.value;
-    }
-  }
-}
-
-const counter = new Counter();
-
-btnAdd.addEventListener("click", counter.addCounter.bind(counter));
-btnSub.addEventListener("click", counter.subCounter.bind(counter));
+$(".btn-toggle-filter").click(function() {
+  $(this)
+    .next(".category-filter")
+    .toggleClass("show");
+});
 
 //=================================================
 
 $(".select-toggle").click(function() {
   $(this).toggleClass("open");
 });
+
+//========================================================
+
+("use strict");
+
+var btnSub = document.querySelector(".btn-sub");
+var btnAdd = document.querySelector(".btn-add");
+var valueResult = document.querySelector(".value");
+
+var addCounter = function addCounter() {
+  valueResult.textContent = Number(valueResult.textContent) + 1;
+};
+
+var subCounter = function subCounter() {
+  if (Number(valueResult.textContent) > 0) {
+    valueResult.textContent = Number(valueResult.textContent) - 1;
+  }
+};
+
+btnAdd.addEventListener("click", addCounter);
+btnSub.addEventListener("click", subCounter);
